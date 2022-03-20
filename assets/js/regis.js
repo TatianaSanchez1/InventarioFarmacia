@@ -2,10 +2,11 @@ function eMsg(params) {
     alert("Error: L" + params + "+");
 } //end eMsg
 
+
 //login
 $(document).on('submit', '#form-login', function(event) {
     event.preventDefault();
-    /* Act on the event */
+    // Act on the event
     var un = $('#un').val();
     var up = $('#up').val();
 
@@ -32,6 +33,8 @@ $(document).on('submit', '#form-login', function(event) {
     });
 });
 
+/*
+
 //all item
 function showAllItem() {
     $.ajax({
@@ -47,7 +50,7 @@ function showAllItem() {
 showAllItem();
 
 $('#add-new-item').click(function(event) {
-    /* Act on the event */
+    // Act on the event
     $('#modal-item').find('.modal-title').text('Agregar producto');
     $('#modal-item').modal('show');
     $('#submit-item').val('add');
@@ -55,7 +58,7 @@ $('#add-new-item').click(function(event) {
 
 $(document).on('submit', '#form-item', function(event) {
     event.preventDefault();
-    /* Act on the event */
+    // Act on the event
     var iName = $('#item-name').val();
     var iPrice = $('#item-price').val();
     var iType = $('#item-type').val();
@@ -124,7 +127,7 @@ function editModal(item_id) {
 //save edit modal
 $(document).on('submit', '#form-item', function(event) {
     event.preventDefault();
-    /* Act on the event */
+    // Act on the event
     var submit = $('#submit-item').val();
     var item_id = $('#item-id').val();
 
@@ -188,8 +191,9 @@ showAllStockList();
 //  //    });
 //  	console.log('sad');
 // });
+/*
 $('#del-stock').click(function(event) {
-    /* Act on the event */
+    // Act on the event
     var check = 0;
     $('input[type=checkbox]:checked').each(function(index) {
         check++;
@@ -203,7 +207,7 @@ $('#del-stock').click(function(event) {
 });
 
 $('.del-expired').click(function(event) {
-    /* Act on the event */
+    // Act on the event
     if ($('#confirm-type').val() == "expired") {
         var finish = false;
         $('input[type=checkbox]:checked').each(function(index) {
@@ -235,7 +239,7 @@ $('.del-expired').click(function(event) {
 });
 
 $('#add-stock').click(function(event) {
-    /* Act on the event */
+    // Act on the event
     $('#modal-stock').find('.modal-title').text('Nuevo stock');
     $('#modal-stock').modal('show');
 });
@@ -244,7 +248,7 @@ $('#add-stock').click(function(event) {
 var fuck = 0;
 $(document).on('submit', '#form-stock', function(event) {
     event.preventDefault();
-    /* Act on the event */
+    // Act on the event
     var item_id = $('#item-id').val();
     var qty = $('#qty').val();
     var xDate = $('#xDate').val();
@@ -313,7 +317,7 @@ showAllStocks();
 
 //stock report print
 $('#stock-report').click(function(event) {
-    /* Act on the event */
+    // Act on the event
     // window.open('print.php?datePick=<?php echo $datePick; ?>','name','width=auto,height=auto');
     window.open('data/print.php', 'name', 'width=auto,height=auto');
 });
@@ -342,7 +346,7 @@ function toCart(stock_id, qty, item_id) {
 
 $(document).on('submit', '#form-toCart', function(event) {
     event.preventDefault();
-    /* Act on the event */
+    // Act on the event
     var stock_id = $('#stock-id').val();
     var item_id = $('#item-id').val();
     var qty = $('#item-qty').val();
@@ -396,7 +400,7 @@ function delCart(stock_id, qty, cart_id) {
 //order form
 $(document).on('submit', '#form-order', function(event) {
     event.preventDefault();
-    /* Act on the event */
+    // Act on the event
     var custName = $('#customer-name').val();
     var tender = $('#tendered').val();
     var totalOrder = $('#totalOrder').val();
@@ -434,7 +438,7 @@ function confirm_cart() {
 } //end confirm_cart
 
 $('#confirm-yes').click(function(event) {
-    /* Act on the event */
+    // Act on the event
     var choice = $('#confirm-type').val();
     if (choice == 'confirmCart') {
         $.ajax({
@@ -487,7 +491,7 @@ function dailySales(date) {
 
 $(document).on('change', '#dailyDate', function(event) {
     event.preventDefault();
-    /* Act on the event */
+    // Act on the event
     var date = $('#dailyDate').val();
     if (date == '' || date == null) {
         $('#printBut').hide();
@@ -499,7 +503,9 @@ $(document).on('change', '#dailyDate', function(event) {
 });
 
 $('#printBut').click(function(event) {
-    /* Act on the event */
+    // Act on the event
     var date = $('#dailyDate').val();
     window.open('data/print-sales.php?date=' + date, 'name', 'width=600,height=400');
 });
+
+*/
