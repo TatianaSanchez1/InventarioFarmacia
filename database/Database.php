@@ -10,7 +10,7 @@ class Database extends Connection{
 		{
 			session_start();//Iniciar Sesion si no está iniciada
 		}
-	}//Fin del constructos
+	}//Fin del constructor
 
 	public function getRow($query, $params = []){
 		try {
