@@ -80,11 +80,12 @@ input[type="submit"] {
     width: 350px;
 }
 
-#login-form h3 {
-    background-color: Maroon;
+#login-form h1 {
+    background-color: #F72585;
     border-radius: 5px 5px 0 0;
     color: #fff;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 700;
     padding: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -112,7 +113,8 @@ input[type="submit"] {
 }
 
 #login-form input {
-    font-size: 14px;
+    font-size: 16px;
+    margin: 10px 0px;
 }
 
 #login-form input[type="text"],
@@ -120,6 +122,15 @@ input[type="submit"] {
     border: 1px solid #dcdcdc;
     padding: 12px 10px;
     width: 100%;
+    transition: 0.3s;
+    transition-property: border-left, border-right, box-shadow;
+}
+
+#login-form input[type="text"]:hover,
+#login-form input[type="password"]:hover {
+    border-left: solid 8px #F72585;
+    border-right: solid 8px #F72585;
+    box-shadow: 0 0 100px rgba(247, 37, 133, 0.8);
 }
 
 #login-form input[type="text"] {
@@ -132,21 +143,26 @@ input[type="submit"] {
 }
 
 #login-form input[type="submit"] {
-    background: Maroon;
+    background: #F72585;
     border-radius: 3px;
     color: #fff;
     float: right;
     font-weight: bold;
     margin-top: 20px;
     padding: 12px 20px;
+    transition: 0.5s;
+    transition-property: border-left, border-right, box-shadow;
 }
 
 #login-form input[type="submit"]:hover {
-    background: Maroon;
+    background: #c01b65;
+    border-left: solid 8px rgba(255, 255, 255, 0.5);
+    border-right: solid 8px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 100px rgba(247, 37, 133, 0.8);
 }
 
 #login-form footer {
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 16px;
 }
 
