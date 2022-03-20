@@ -283,7 +283,6 @@ $(document).on('submit', '#form-stock', function(event) {
     });
 
 });
-
 //all expired
 function showAllExpired() {
     $.ajax({
