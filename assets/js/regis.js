@@ -33,7 +33,7 @@ $(document).on('submit', '#form-login', function(event) {
     });
 });
 
-/*
+
 
 //all item
 function showAllItem() {
@@ -167,7 +167,7 @@ $(document).on('submit', '#form-item', function(event) {
         });
     } //end submit
 });
-
+/*
 function showAllStockList() {
     $.ajax({
         url: 'data/all_stocklist.php',
@@ -181,17 +181,17 @@ function showAllStockList() {
     });
 } //end showAllStockList
 showAllStockList();
-
+/*
 // $('#del-stock').on('click', '.selector', function(event) {
 // 	event.preventDefault();
-// 	/* Act on the event */
+// 	// Act on the event 
 // 	// $('input[type=checkbox]:checked').each(function(index) {
 //  //        //where the magic begins wahaha. ge ahak.
 //  // 		console.log($(this).val())
 //  //    });
 //  	console.log('sad');
 // });
-/*
+
 $('#del-stock').click(function(event) {
     // Act on the event
     var check = 0;
