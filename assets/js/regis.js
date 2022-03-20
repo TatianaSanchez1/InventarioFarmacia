@@ -167,7 +167,7 @@ $(document).on('submit', '#form-item', function(event) {
         });
     } //end submit
 });
-/*
+
 function showAllStockList() {
     $.ajax({
         url: 'data/all_stocklist.php',
@@ -181,7 +181,7 @@ function showAllStockList() {
     });
 } //end showAllStockList
 showAllStockList();
-/*
+
 // $('#del-stock').on('click', '.selector', function(event) {
 // 	event.preventDefault();
 // 	// Act on the event 
@@ -377,6 +377,7 @@ $(document).on('submit', '#form-toCart', function(event) {
     } //end if !qty
 });
 
+
 //del from cart
 function delCart(stock_id, qty, cart_id) {
     $.ajax({
@@ -507,5 +508,3 @@ $('#printBut').click(function(event) {
     var date = $('#dailyDate').val();
     window.open('data/print-sales.php?date=' + date, 'name', 'width=600,height=400');
 });
-
-*/
