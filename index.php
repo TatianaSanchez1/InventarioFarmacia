@@ -32,6 +32,8 @@
                     <input type="password" id="up" placeholder="Contraseña" required autocomplete="off">
 
                     <input type="submit" name="log" value="Ingresar">
+
+                    <p>No está registrado? <a href="register.php">Crear una cuenta</a></p>
                 </form>
 
             </fieldset>
@@ -39,15 +41,6 @@
         </div> 
 
     </div>
-
-    <script type="text/javascript">
-        $(".opciones-02").click(function() {
-            $('form').animate({
-                height: "toggle",
-                opacity: "toggle"
-            }, "slow");
-        });
-    </script>
 
     <script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>

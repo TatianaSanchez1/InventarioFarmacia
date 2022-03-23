@@ -115,6 +115,16 @@ input[type="submit"] {
 #login-form input {
     font-size: 16px;
     margin: 10px 0px;
+    border: 1px solid #dcdcdc;
+    padding: 12px 10px;
+    width: 100%;
+    transition: 0.3s;
+    transition-property: border-left, border-right, box-shadow;
+}
+
+#login-form input[type="email"] {
+    font-size: 16px;
+    margin: 10px 0px;
 }
 
 #login-form input[type="text"],
@@ -127,13 +137,15 @@ input[type="submit"] {
 }
 
 #login-form input[type="text"]:hover,
-#login-form input[type="password"]:hover {
+#login-form input[type="password"]:hover,
+#login-form input[type="email"]:hover {
     border-left: solid 8px #F72585;
     border-right: solid 8px #F72585;
     box-shadow: 0 0 100px rgba(247, 37, 133, 0.8);
 }
 
-#login-form input[type="text"] {
+#login-form input[type="text"],
+#login-form input[type="email"] {
     border-radius: 3px 3px 0 0;
 }
 
