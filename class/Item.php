@@ -17,7 +17,7 @@ class Item extends Database implements iItem {
 		$sql = "SELECT *
 				FROM item
 				WHERE item_id = ?";
-		return $this->getRow($sql, [$item_id]);
+		return $this->getRow($sql, [$item_id]); 
 	}//end edit_item
 
 	public function add_item($iName, $iPrice, $type_id, $code, $brand, $grams)

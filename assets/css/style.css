@@ -122,11 +122,6 @@ input[type="submit"] {
     transition-property: border-left, border-right, box-shadow;
 }
 
-#login-form input[type="email"] {
-    font-size: 16px;
-    margin: 10px 0px;
-}
-
 #login-form input[type="text"],
 #login-form input[type="password"] {
     border: 1px solid #dcdcdc;
@@ -137,15 +132,13 @@ input[type="submit"] {
 }
 
 #login-form input[type="text"]:hover,
-#login-form input[type="password"]:hover,
-#login-form input[type="email"]:hover {
+#login-form input[type="password"]:hover {
     border-left: solid 8px #F72585;
     border-right: solid 8px #F72585;
     box-shadow: 0 0 100px rgba(247, 37, 133, 0.8);
 }
 
-#login-form input[type="text"],
-#login-form input[type="email"] {
+#login-form input[type="text"] {
     border-radius: 3px 3px 0 0;
 }
 
@@ -171,6 +164,17 @@ input[type="submit"] {
     border-left: solid 8px rgba(255, 255, 255, 0.5);
     border-right: solid 8px rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 100px rgba(247, 37, 133, 0.8);
+}
+
+#login-form>p {
+    color: #bbb;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+#login-form>a {
+    color: #F72585;
 }
 
 #login-form footer {

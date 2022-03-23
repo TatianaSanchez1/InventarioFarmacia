@@ -1,31 +1,58 @@
-<?php 
+<?php
+include ('../database/Database.php');
 require_once('../class/User.php');
 
 
-$name = $_POST['name'];
-$username = $_POST['username'];
+$username = $_POST['name'];
+$user_account = $_POST['useraccount'];
 $email = $_POST['email'];
-$userpassword = $_POST['userpassword'];
+$user_password = $_POST['userpassword'];
+ 
+$user_password = md5($user_password);
 
-	$userpassword = md5($userpassword);
+$query = "INSERT INTO user(user_account, user_pass, username, email) VALUES (?,?,?,?)";
 
-	$result = $user->user_register($name, $username, $email, $userpassword);
-    
-	if($result > 0){
-		// echo 'succ';
-		$return['logged'] = true;
-		$return['url'] = "home.php";
-		$_SESSION['logged_id'] = $result['user_id'];
-		$_SESSION['logged_type'] = $result['user_type'];
-		$_SESSION['uniqid'] = uniqid();
-	}else{
-		// echo 'fail';
-		$return['logged'] = false;
-		$return['msg'] = "Usuario o contraseña invalido!";
-	}
+// Verificar que el e-mail no exista
+$verify_email = "SELECT * FROM user WHERE email = ?";
+$result = $user->getRow($verify_email, [$email]);
+if ($result > 0) {
+    echo '
+            <script>
+                alert("Este correo ya está registrado.");
+                window.location = "../index.php";
+            </script>
+        ';
+    exit();
+}
 
-	echo json_encode($return);
+// Verificar que el usuario no exista
+$verify_user = "SELECT * FROM user WHERE user_account = ?";
+$result_account = $user->getRow($verify_user, [$user_account]);
+if ($result_account > 0) {
+    echo '
+            <script>
+                alert("Este usuario ya está registrado. Intente nuevamente");
+                window.location = "../index.php";
+            </script>
+        ';
+    exit();
+}
 
+$execute = $user->insertRow($query, [$user_account, $user_password, $username, $email] ); 
+
+if ($execute) {
+    echo '
+            <script> 
+                alert("Usuario almacenado exitosamente");
+                window.location = "../index.php";
+            </script>';
+} else {
+    echo '
+            <script> 
+                alert("Intentalo de nuevo. Usuario no almacenado");
+                window.location = "../index.php";
+            </script>';
+}
 
 
 $user->Disconnect();

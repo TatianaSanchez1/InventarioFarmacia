@@ -24,14 +24,14 @@
 
             <fieldset>
 
-                <form id="form-login">
-                    <input type="text" autofocus id="name" placeholder="Nombre" required>
+                <form id="form-register" action="data/user_register.php" method="POST">
+                    <input type="text" autofocus id="name" name="name" placeholder="Nombre" required>
 
-                    <input type="email" id="email" placeholder="E-mail" required>
+                    <input type="text" id="email" name="email" placeholder="E-mail" required>
 
-                    <input type="text" id="username" placeholder="Usuario" required>
+                    <input type="text" id="useraccount" name="useraccount" placeholder="Usuario" required>
 
-                    <input type="password" id="userpassword" placeholder="Contraseña" required>
+                    <input type="password" id="userpassword" name="userpassword" placeholder="Contraseña" required>
 
                     <input type="submit" name="log" value="Registrarse">
                 </form>

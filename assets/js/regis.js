@@ -33,8 +33,6 @@ $(document).on('submit', '#form-login', function(event) {
     });
 });
 
-
-
 //all item
 function showAllItem() {
     $.ajax({

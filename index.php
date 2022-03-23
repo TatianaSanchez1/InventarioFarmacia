@@ -6,8 +6,6 @@
     <title>Sistema de Inventario Farmacéutico</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/styleLogin.css">
-
 
 </head>
 
@@ -33,7 +31,8 @@
 
                     <input type="submit" name="log" value="Ingresar">
 
-                    <p>No está registrado? <a href="register.php">Crear una cuenta</a></p>
+                    <p>No está registrado? <br>
+                         <a href="register.php">Crear una cuenta</a></p>
                 </form>
 
             </fieldset>
