@@ -1,6 +1,6 @@
-<?php 
-require_once('include/session.php'); 
-$item_menu=1;
+<?php
+require_once('include/session.php');
+$item_menu = 1;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +38,7 @@ $item_menu=1;
     <div id="wrapper">
 
         <!-- Navigation -->
-        <?php include('navbar.php');?>
+        <?php include('navbar.php'); ?>
 
         <div id="page-wrapper">
 
@@ -55,7 +55,7 @@ $item_menu=1;
                 <button class="btn btn-default" id="add-new-item">Agregar producto
                     <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
                 </button>
-               <div id="all-item"></div>
+                <div id="all-item"></div>
 
             </div>
             <!-- /.container-fluid -->
@@ -67,15 +67,15 @@ $item_menu=1;
     <!-- /#wrapper -->
 
 
-<?php include_once('modal/add_new_item.php'); ?>
-<?php include_once('modal/message.php'); ?>
+    <?php include_once('modal/add_new_item.php'); ?>
+    <?php include_once('modal/message.php'); ?>
 
-<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/regis.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/regis.js"></script>
 
 
 </body>

@@ -1,6 +1,6 @@
-<?php 
-	require_once('include/session.php');
-	$expired_menu=1;
+<?php
+require_once('include/session.php');
+$expired_menu = 1;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +38,7 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-        <?php include("navbar.php");?>
+        <?php include("navbar.php"); ?>
 
         <div id="page-wrapper">
 
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <!-- /.row -->
-               <div id="all-expired"></div>
+                <div id="all-expired"></div>
 
             </div>
             <!-- /.container-fluid -->
@@ -64,12 +64,12 @@
     <!-- /#wrapper -->
 
 
-<script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
-<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/regis.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/regis.js"></script>
 
 
 </body>

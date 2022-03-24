@@ -1,7 +1,7 @@
 <?php
- require_once('include/session.php'); 
- $stock_menu=1;
- ?>
+require_once('include/session.php');
+$stock_menu = 1;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Inventario -  Sistema de Inventario Farmacéutico</title>
+    <title>Inventario - Sistema de Inventario Farmacéutico</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-        <?php include ("navbar.php")?>
+        <?php include("navbar.php") ?>
 
         <div id="page-wrapper">
             <div class="container-fluid">
@@ -53,7 +53,7 @@
                 <button class="btn btn-success btn-sm" id="stock-report">IMPRIMIR
                     <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
                 </button>
-               <div id="all-stock"></div>
+                <div id="all-stock"></div>
 
             </div>
             <!-- /.container-fluid -->
@@ -65,15 +65,15 @@
     <!-- /#wrapper -->
 
 
-<?php include_once('modal/confirmation.php'); ?>
-<?php include_once('modal/message.php'); ?>
+    <?php include_once('modal/confirmation.php'); ?>
+    <?php include_once('modal/message.php'); ?>
 
-<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/regis.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/regis.js"></script>
 
 
 </body>

@@ -1,6 +1,6 @@
-<?php 
-require_once('include/session.php'); 
-$home_menu=1;
+<?php
+require_once('include/session.php');
+$home_menu = 1;
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +37,7 @@ $home_menu=1;
     <div id="wrapper">
 
         <!-- Navigation -->
-        <?php include('navbar.php');?>
+        <?php include('navbar.php'); ?>
 
         <div id="page-wrapper">
 
@@ -57,8 +57,8 @@ $home_menu=1;
                     </div>
                 </div>
                 <!-- /.row -->
-                <div id="order"></div>         
-               
+                <div id="order"></div>
+
             </div>
             <!-- /.container-fluid -->
 
@@ -69,12 +69,12 @@ $home_menu=1;
     <!-- /#wrapper -->
 
 
-<?php include_once('modal/to_cart.php'); ?>
-<?php include_once('modal/confirmation.php'); ?>
-<?php include_once('modal/add_new_item.php'); ?>
-<?php include_once('modal/message.php'); ?>
+    <?php include_once('modal/to_cart.php'); ?>
+    <?php include_once('modal/confirmation.php'); ?>
+    <?php include_once('modal/add_new_item.php'); ?>
+    <?php include_once('modal/message.php'); ?>
 
-    <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.12.2.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>

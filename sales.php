@@ -1,6 +1,6 @@
 <?php
-	require_once('include/session.php'); 
-	$sales_menu=1;	
+require_once('include/session.php');
+$sales_menu = 1;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Ventas -  Sistema de Inventario Farmacéutico</title>
+    <title>Ventas - Sistema de Inventario Farmacéutico</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-        <?php include("navbar.php");?>
+        <?php include("navbar.php"); ?>
 
         <div id="page-wrapper">
 
@@ -53,17 +53,16 @@
                 </div>
                 <!-- /.row -->
                 <strong>Ventas diarias:</strong>
-                <input id="dailyDate" type="date" class="btn btn-default btn-sm" placeholder=""
-                value="<?= date('Y-m-d'); ?>">
-            
+                <input id="dailyDate" type="date" class="btn btn-default btn-sm" placeholder="" value="<?= date('Y-m-d'); ?>">
+
                 <div id="printBut" class="pull-right">
-                <button type="button" class="btn btn-success btn-sm">
-                    Imprimir
-                    <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
-                </button>
+                    <button type="button" class="btn btn-success btn-sm">
+                        Imprimir
+                        <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+                    </button>
                 </div>
-               
-               <div id="all-sales"></div>
+
+                <div id="all-sales"></div>
 
             </div>
             <!-- /.container-fluid -->
@@ -75,12 +74,12 @@
     <!-- /#wrapper -->
 
 
-<script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
-<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/regis.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/regis.js"></script>
 
 
 </body>

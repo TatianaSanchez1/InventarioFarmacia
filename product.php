@@ -1,6 +1,6 @@
-<?php 
-	require_once('include/session.php'); 
-	$products_menu=1;
+<?php
+require_once('include/session.php');
+$products_menu = 1;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +38,7 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-        <?php include("navbar.php");?>
+        <?php include("navbar.php"); ?>
 
         <div id="page-wrapper">
 
@@ -60,7 +60,7 @@
                     <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                 </button>
 
-               <div id="all-stocklist"></div>
+                <div id="all-stocklist"></div>
 
             </div>
             <!-- /.container-fluid -->
@@ -72,16 +72,16 @@
     <!-- /#wrapper -->
 
 
-<?php include_once('modal/stock.php'); ?>
-<?php include_once('modal/confirmation.php'); ?>
-<?php include_once('modal/message.php'); ?>
+    <?php include_once('modal/stock.php'); ?>
+    <?php include_once('modal/confirmation.php'); ?>
+    <?php include_once('modal/message.php'); ?>
 
-<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/regis.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/regis.js"></script>
 
 
 </body>
