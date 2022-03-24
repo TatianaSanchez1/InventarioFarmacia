@@ -1,8 +1,8 @@
-<?php 
+<?php
 //add to expired table before e delete sa stock table
 require_once('../class/Expired.php');
 require_once('../class/Stock.php');
-if(isset($_POST['stock_id'])){
+if (isset($_POST['stock_id'])) {
 	$stock_id = $_POST['stock_id'];
 
 	//e search ang stock details which is
@@ -16,11 +16,11 @@ if(isset($_POST['stock_id'])){
 	$saveToExpired = $expired->add_expired($name, $price, $qty, $expiredDate);
 	$delStock =	$stock->del_stockList($stock_id);
 	$return['valid'] = false;
-	if($delStock && $saveToExpired){
+	if ($delStock && $saveToExpired) {
 		$return['valid'] = true;
 		$return['msg'] = "Eliminado correctamente!";
 	}
 	echo json_encode($return);
-}//end isset
+} //end isset
 
 $expired->Disconnect();//close connection

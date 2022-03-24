@@ -180,16 +180,6 @@ function showAllStockList() {
 } //end showAllStockList
 showAllStockList();
 
-// $('#del-stock').on('click', '.selector', function(event) {
-// 	event.preventDefault();
-// 	// Act on the event 
-// 	// $('input[type=checkbox]:checked').each(function(index) {
-//  //        //where the magic begins wahaha. ge ahak.
-//  // 		console.log($(this).val())
-//  //    });
-//  	console.log('sad');
-// });
-
 $('#del-stock').click(function(event) {
     // Act on the event
     var check = 0;
@@ -197,7 +187,7 @@ $('#del-stock').click(function(event) {
         check++;
     });
     if (check == 0) {
-        alert('Please Select Row!');
+        alert('Por favor seleccione una fila!');
     } else {
         $('#confirm-type').val('expired');
         $('#modal-confirmation').modal('show');
