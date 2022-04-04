@@ -16,14 +16,6 @@ if (isset($_POST['item_id'])) {
 		$return['msg'] = "New Stock Added Successfully!";
 	}
 	echo json_encode($return);
-
-	if ($xDate >= getdate()) {
-		echo ' 	
-				<script>
-					alert("El medicamento está vencido.");
-				</script>
-			';
-	}
 	// echo 'fuck';
 } //end isset
 
